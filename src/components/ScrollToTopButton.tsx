@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import tree from '../tree.png'
 
 const ScrollToTopButton: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false)
@@ -29,7 +30,8 @@ const ScrollToTopButton: React.FC = () => {
       onClick={scrollToTop}
       className={`scrollToTopButton ${isVisible ? 'show' : ''}`}
     >
-      맨 위로
+      <img src={tree} className="tree-image" alt="tree" />
+      <p className='top'>TOP ↑</p>
     </button>
   )
 }
