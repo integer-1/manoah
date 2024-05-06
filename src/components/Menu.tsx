@@ -2,7 +2,11 @@ import React from 'react'
 
 const Menu = () => {
   return (
-    <div>Menu</div>
+    <div id="menu">
+      Menu
+      <p className="menutext">Premium Quality Katsu</p>
+
+    </div>
   )
 }
 

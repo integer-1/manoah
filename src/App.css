@@ -1,9 +1,101 @@
 .App {
   text-align: center;
   background-color: #f3c9b8;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
+.font {
+  font-family: 'Quicksand', sans-serif;
+}
 
-.App-logo {
-  width: 25%;
+#slogan {
+  background-color: #025984;
+  height: 1200px;
+}
+
+.slogan-image {
+  width: 50%;
+  margin-top: 20%;
+}
+
+#nav {
+  text-align: right;
+  margin: 3%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #009b8a;
+  font-size: 21px;
+  font-weight: 600;
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+#main {
+  height: 100vh;
+  position: relative;
+}
+
+.logo-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 30%;
+}
+
+#menu {
+  background-color: #025984;
+  height: 100vh;
+}
+
+#story {
+  height: 100vh;
+}
+#information {
+  height: 100vh;
+}
+
+.scrollToTopButton {
+  display: none; /* 기본적으로 보이지 않도록 설정, JavaScript에서 조건부로 보이게 설정합니다. */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  font-size: 16px;
+  z-index: 1000;
+}
+
+.scrollToTopButton.show {
+  display: block;
 }
