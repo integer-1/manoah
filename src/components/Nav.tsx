@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Nav = () => {
   return (
     <div id="nav">
@@ -10,9 +8,6 @@ const Nav = () => {
           </li>
           <li>
             <a href="/#story">about</a>
-          </li>
-          <li>
-            <a href="/#information">contact</a>
           </li>
         </ul>
       </nav>

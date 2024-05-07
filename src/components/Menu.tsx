@@ -1,4 +1,3 @@
-import React from 'react'
 import menu from '../menu1.png'
 
 const cvFileUrl =
@@ -17,17 +16,16 @@ const Menu = () => {
 
   return (
     <div id="menu">
-      <div className="menu-box">
         <img src={menu} className="menu-image" alt="menu" />
+      <div className="menu-box">
         <p className="menu-text">
-          Manoah's Premium Quality Katsu showcases our dedication to culinary
-          excellence. We make our own breadcrumbs, ensuring each katsu is
+          <span className="menu-logo">manoah</span>'s Premium Quality Katsu
+          showcases our dedication to culinary excellence.
+          <br /> <br /> We make our own breadcrumbs, ensuring each katsu is
           perfectly crisp and flavorful. This meticulous process highlights the
-          tender, juicy meat, providing a superior dining experience. <br />
-          <br />
-          Enjoy a refined katsu that stands out as a true delight at Manoah,
-          where every meal is crafted to perfection.
+          tender, juicy meat, providing a superior dining experience.
         </p>
+
         <button
           className="download"
           onClick={() => {

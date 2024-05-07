@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import logo from './logo3.png'
+import { useEffect, useState } from 'react'
 import './App.css'
+import Slogan from './components/Slogan'
+import Nav from './components/Nav'
+import Information from './components/Information'
 import Menu from './components/Menu'
 import Story from './components/Story'
-import Information from './components/Information'
-import Nav from './components/Nav'
-import Slogan from './components/Slogan'
 import ScrollToTopButton from './components/ScrollToTopButton'
+import logo from './logo.png'
 
 function App() {
   const [showSlogan, setShowSlogan] = useState(true)
@@ -23,14 +23,15 @@ function App() {
       {showSlogan && <Slogan />}
       <ScrollToTopButton />
       <div id="main">
+        <div id='top'></div>
         <Nav />
         <div className="logo-container">
           <img src={logo} className="logo" alt="logo" />
         </div>
+        <Information />
       </div>
       <Menu />
       <Story />
-      <Information />
     </div>
   )
 }

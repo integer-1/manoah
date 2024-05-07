@@ -4,7 +4,7 @@ import slogan from '../slogan.png'
 const Slogan = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
-      const element = document.getElementById('main')
+      const element = document.getElementById('top')
       if (element) {
         element.scrollIntoView({
           behavior: 'smooth',

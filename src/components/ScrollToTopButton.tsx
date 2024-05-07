@@ -31,7 +31,7 @@ const ScrollToTopButton: React.FC = () => {
       className={`scrollToTopButton ${isVisible ? 'show' : ''}`}
     >
       <img src={tree} className="tree-image" alt="tree" />
-      <p className='top'>TOP ↑</p>
+      <p className='top'>TOP</p>
     </button>
   )
 }
